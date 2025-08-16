@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>右側清單版面</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        min-height: 100vh;
+    }
+
+    /* 主內容區 */
+    .main-content {
+        flex: 1;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+
+    /* 右側清單欄 */
+    .sidebar {
+        width: 300px;
+        background-color: #222;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .sidebar h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #444;
+        padding-bottom: 5px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar li {
+        padding: 10px;
+        border-bottom: 1px solid #444;
+        cursor: pointer;
+    }
+
+    .sidebar li:hover {
+        background-color: #333;
+    }
+</style>
+</head>
+<body>
+
+<div class="main-content">
+    <h1>主要內容區</h1>
+    <p>這裡可以放圖片、文字、影片，或任何主要顯示的內容。</p>
+</div>
+
+<div class="sidebar">
+    <h2>清單</h2>
+    <ul>
+        <li>項目 1</li>
+        <li>項目 2</li>
+        <li>項目 3</li>
+        <li>項目 4</li>
+        <li>項目 5</li>
+    </ul>
+</div>
+
+</body>
+</html>
