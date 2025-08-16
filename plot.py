@@ -1,5 +1,9 @@
 import matplotlib.pyplot as plt
 import datetime
+import os
+
+# 確保資料夾存在
+os.makedirs("docs/images", exist_ok=True)
 
 # 生成示例圖
 now = datetime.datetime.now()
@@ -9,6 +13,6 @@ plt.title(f"自動更新圖 - {now.strftime('%Y-%m-%d %H:%M:%S')}")
 plt.xlabel("X")
 plt.ylabel("Y")
 
-# 儲存到 GitHub Pages 圖片資料夾
+# 儲存圖片
 plt.savefig("docs/images/output.png")
 plt.close()
